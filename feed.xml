@@ -4,10 +4,10 @@
     <title>System Mobile</title>
     <description>Desenvolvimento de aplicações mobile
 </description>
-    <link>sysmob.github.io/sysmob/sysmob/</link>
-    <atom:link href="sysmob.github.io/sysmob/sysmob/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Mar 2015 23:08:28 +0000</pubDate>
-    <lastBuildDate>Sun, 15 Mar 2015 23:08:28 +0000</lastBuildDate>
+    <link>sysmob.github.io/sysmob/site/</link>
+    <atom:link href="sysmob.github.io/sysmob/site/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 Mar 2015 23:11:00 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Mar 2015 23:11:00 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -18,8 +18,8 @@
 &lt;img src=&quot;sysmob.github.io/sysmob/img/posts/facape-aluno-screen2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Mar 2015 17:07:00 +0000</pubDate>
-        <link>sysmob.github.io/sysmob/sysmob/projects/facapealuno</link>
-        <guid isPermaLink="true">sysmob.github.io/sysmob/sysmob/projects/facapealuno</guid>
+        <link>sysmob.github.io/sysmob/site/projects/facapealuno</link>
+        <guid isPermaLink="true">sysmob.github.io/sysmob/site/projects/facapealuno</guid>
         
         
         <category>portfolio</category>
