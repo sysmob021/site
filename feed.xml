@@ -6,16 +6,22 @@
 </description>
     <link>/site/</link>
     <atom:link href="/site/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Mar 2015 23:32:10 +0000</pubDate>
-    <lastBuildDate>Sun, 15 Mar 2015 23:32:10 +0000</lastBuildDate>
+    <pubDate>Sun, 29 Mar 2015 01:50:43 +0000</pubDate>
+    <lastBuildDate>Sun, 29 Mar 2015 01:50:43 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Facape Aluno</title>
         <description>&lt;p&gt;O &lt;strong&gt;FacapeAluno&lt;/strong&gt; é o primeiro projeto desenvolvido no SysMob. O aplicativo tem o propósito de disponibilizar aos alunos da instituição a possibilidade de acessarem suas notas, horários, boletos, entre outras funcionalidades.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/site/img/posts/facape-aluno-screen1.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/site/img/posts/facape-aluno-screen2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;img src=&quot;/site/img/posts/facape-aluno-screen1.jpg&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;img src=&quot;/site/img/posts/facape-aluno-screen2.jpg&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 08 Mar 2015 17:07:00 +0000</pubDate>
         <link>/site/projects/facapealuno</link>

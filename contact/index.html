@@ -99,37 +99,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                <p class="text-center">Em Construção!</p>
-                    <!-- <form name="sentMessage" id="contactForm" novalidate>
+                    <form action="http://formspree.io/contato.sysmob@gmail.com" method="POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Seu Nome" id="name" required data-validation-required-message="Insira seu nome.">
-                                    <p class="help-block text-danger"></p>
+                                    <input type="text" name="name" class="form-control" placeholder="Seu Nome">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Seu E-mail" id="email" required data-validation-required-message="Insira seu e-mail.">
-                                    <p class="help-block text-danger"></p>
+                                    <input type="email" name="_replyto" class="form-control" placeholder="Seu E-mail">
                                 </div>
                                 <div class="form-group">
-                                    <input type="texto" class="form-control" placeholder="Assunto da Mensagem" id="subject" required data-validation-required-message="Insira o assunto da mensagem.">
-                                    <p class="help-block text-danger"></p>
+                                    <input type="text" name="subject" class="form-control" placeholder="Assunto da Mensagem">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Sua Mensagem" id="message" required data-validation-required-message="Insira uma mensagem."></textarea>
-                                    <p class="help-block text-danger"></p>
+                                    <textarea class="form-control" placeholder="Sua Mensagem" name="message"></textarea>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
-                                <div id="success"></div>
                                 <br>
-                                <button type="submit" class="btn btn-xl">Enviar</button>
+                                <input type="submit" value="Enviar" class="btn btn-xl">
+                                <input type="hidden" name="_next" value="/site/contact" />
+                                <input type="hidden" name="_subject" value="Contato com o Sysmob" />
                             </div>
                         </div>
-                    </form> -->
+                    </form>
                 </div>
             </div>
         </div>
@@ -168,8 +164,8 @@
 <script src="/site/js/cbpAnimatedHeader.js"></script>
 
 <!-- Contact Form JavaScript -->
-<script src="/site/js/jqBootstrapValidation.js"></script>
-<script src="/site/js/contact_me.js"></script>
+<!-- <script src="/site/js/jqBootstrapValidation.js"></script>
+<script src="/site/js/contact_me.js"></script> -->
 
 <!-- Custom Theme JavaScript -->
 <script src="/site/js/agency.js"></script>
