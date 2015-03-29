@@ -1,0 +1,11 @@
+# Site settings
+title: System Mobile
+email: contato.sysmob@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Desenvolvimento de aplicações mobile
+baseurl: "/site" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+github_username:  sysmob
+
+# Build settings
+markdown: kramdown

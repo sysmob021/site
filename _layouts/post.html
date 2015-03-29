@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  {% include head.html %}
+
+  <body id="page-top" class="index">
+
+    {% include header.html %}
+
+      <header style="background-image: url('{{ site.baseurl }}/img/posts/{{ page.image }}')">
+        <div class="container">
+            <div class="intro-text">
+              <div class="intro-lead-in">{{ page.date | date: "%d/%m/%Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
+              <div class="intro-heading">{{ page.title }}</div>
+            </div>
+        </div>
+    </header>
+
+      <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 img-responsive">
+            {{ content }}
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <hr>
+          <div class="col-md-8 col-md-offset-2">
+            {% if page.comments %}
+              <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = '0ferrugem';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+  {% include footer.html %}
+</html>

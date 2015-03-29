@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  {% include head.html %}
+
+  <body id="page-top" class="index">
+
+    {% include header.html %}
+
+    <!-- Header -->
+    <header style="background-image: url('{{ site.baseurl }}/img/{{ page.background }}')">
+        <div class="container">
+            <div class="intro-text">
+              <div class="intro-heading">{{ page.heading }}</div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+            {% for project in site.categories.portfolio %}
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#{{ project.title | remove: ' ' }}" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ site.baseurl }}/img/posts/{{ project.image }}" class="img-responsive" alt="{{ project.title }}">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>{{ project.title }}</h4>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Modals -->
+    {% for project in site.categories.portfolio %}
+        <div class="portfolio-modal modal fade" id="{{ project.title | remove: ' ' }}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>{{ project.title }}</h2>
+
+                                <p class="item-intro text-muted">{{ project.meta }}</p>
+
+                                <img class="img-responsive" src="{{ site.baseurl }}/img/posts/{{ project.image }}" alt="{{ project.title }}" style="margin: 0 auto;">
+
+                                <br>
+
+                                <p>{{ project.content | truncatewords:50 | strip_html }}</p>
+
+                                <a href="{{ site.baseurl }}{{ project.url }}" class="btn btn-primary">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
